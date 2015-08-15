@@ -38,6 +38,10 @@ gem 'sanitize'
 
 gem 'gravatar_image_tag'
 
+gem 'rails_12factor'
+
+ruby "2.2.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
