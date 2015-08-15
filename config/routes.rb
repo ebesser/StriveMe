@@ -1,3 +1,3 @@
 Workjounral::Application.routes.draw do
- root to: 'comments#index'
+ get '/' => "comments#index"
 end
