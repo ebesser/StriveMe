@@ -4,9 +4,9 @@ class EmailProcessor
   end
 
   def process
-    title = @comment.subject
+    email = @comment.subject
     body = @comment.body
 
-    Comment.create!(title: title, body: body)
+    Comment.create!(email: email, body: body)
   end
 end
