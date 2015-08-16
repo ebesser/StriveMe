@@ -40,7 +40,7 @@ gem 'gravatar_image_tag'
 
 gem 'rails_12factor'
 
-# Use ActiveModel has_secure_password
+# Use ActiveModelpg has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server

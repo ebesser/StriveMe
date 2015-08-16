@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration
       t.string :email
       t.string :text
       t.date :created_at
-      t.time :updated_at
+      t.date :updated_at
 
       t.timestamps
     end
