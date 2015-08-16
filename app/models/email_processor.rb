@@ -7,6 +7,6 @@ class EmailProcessor
     title = @comment.subject
     body = @comment.body
 
-    Comment.create!(email: email, body: body)
+    Comment.create!(title: title, body: body)
   end
 end
