@@ -1,3 +1,5 @@
 Workjounral::Application.routes.draw do
- get '/' => "comments#index"
+ 	get '/' => "comments#index"
+
+	mount_griddler
 end

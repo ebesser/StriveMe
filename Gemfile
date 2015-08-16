@@ -34,6 +34,8 @@ end
 
 gem 'griddler'
 
+gem 'griddler-sendgrid'
+
 gem 'sanitize'
 
 gem 'gravatar_image_tag'

@@ -41,6 +41,8 @@ GEM
     griddler (1.2.1)
       htmlentities
       rails (>= 3.2.0)
+    griddler-sendgrid (0.0.1)
+      griddler
     hike (1.2.3)
     htmlentities (4.3.4)
     i18n (0.7.0)
@@ -130,6 +132,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   gravatar_image_tag
   griddler
+  griddler-sendgrid
   jbuilder (~> 1.2)
   jquery-rails
   pg
