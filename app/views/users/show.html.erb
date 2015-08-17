@@ -1,0 +1,5 @@
+<ol>
+<% @comments.each do |comment| %>
+	<li><%= comment.email %> at <%= comment.created_at %></li>
+	<% end %>
+</ol>
