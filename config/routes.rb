@@ -3,5 +3,5 @@ Workjounral::Application.routes.draw do
 
 	mount_griddler
 
-	resources :users, param: :short_name
+	resources :users, param: :short_name, :short_name => /[\w.]+/
 end
