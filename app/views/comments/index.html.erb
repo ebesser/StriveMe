@@ -18,12 +18,14 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<h1>Keep track of your daily accomplishments with a simple email</h1>
-						<form class="form-inline" role="form">
-						  <div class="form-group">
-						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-						  </div>
-						  <button type="submit" class="btn btn-success btn-lg">Join our open beta!</button>
-						</form>					
+
+						<%= form_for @user, :html => {:class => "form-inline", :role => "form"} do |f| %>
+						<div class="form-group">
+  							<%= f.text_field :email, class: "form-control", placeholder: "Enter Your Email" %>
+  						</div>
+  							<%= f.submit "Join Our Open Beta", class: "btn btn-success btn-lg"%>
+						<% end %>
+	
 					</div><!-- /col-lg-6 -->
 					<div class="col-lg-6">
 						<img class="img-responsive" src='<%= image_path("product_screenshot.png") %>' alt="">
@@ -69,19 +71,20 @@
 			<!-- <hr> -->
 			<div class="row centered">
 				<div class="col-lg-6 col-lg-offset-3">
-					<form class="form-inline" role="form">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-					  </div>
-					  <button type="submit" class="btn btn-success btn-lg">Join our open beta!</button>
-					</form>					
+					
+
+					<%= form_for @user, :html => {:class => "form-inline", :role => "form"} do |f| %>
+						<div class="form-group">
+  							<%= f.text_field :email, class: "form-control", placeholder: "Enter Your Email" %>
+  						</div>
+  							<%= f.submit "Join Our Open Beta", class: "btn btn-success btn-lg"%>
+					<% end %>
+
 				</div>
 				<div class="col-lg-3"></div>
 			</div><!-- /row -->
 			
-		</div><!-- /container -->
-		
-			<hr>
+		</div>
 			<span>Copyright 2015</span>
 		</div>
 </div>
