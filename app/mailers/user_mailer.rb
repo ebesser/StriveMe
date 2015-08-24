@@ -4,6 +4,7 @@ class UserMailer < ActionMailer::Base
 		@user = user
 		mail(
 			to:user.email,
+			from: "services@gmail.com",
 			subject: "Welcome To aMEliable!"
 			)
 	end
