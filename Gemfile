@@ -38,6 +38,8 @@ gem 'griddler'
 
 gem 'griddler-sendgrid'
 
+gem 'griddler-mandrill'
+
 # gem 'sanitize'
 
 gem 'gravatar_image_tag'
