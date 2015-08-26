@@ -1,7 +1,6 @@
 class EmailProcessor
   def initialize(comment)
     @comment = comment
-    # binding.pry
   end
 
   def process
