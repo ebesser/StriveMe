@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
-    user_short_name = params[:short_name]
-    @user = User.where(short_name:user_short_name).first
+    user_email = params[:email].to_s
+    @user = User.where(email:user_email).first
     @comments = @user.comments.reverse_order
   end
 
