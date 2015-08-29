@@ -46,6 +46,12 @@ gem 'gravatar_image_tag'
 
 gem 'rails_12factor'
 
+gem 'mandrill-api'
+
+gem "dotenv-rails"
+
+ gem 'gibbon'
+
 # Use ActiveModelpg has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -35,8 +35,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    dotenv (2.0.2)
+    dotenv-rails (2.0.2)
+      dotenv (= 2.0.2)
+      railties (~> 4.0)
     erubis (2.7.0)
+    excon (0.45.4)
     execjs (2.6.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    gibbon (2.0.0)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
     gravatar_image_tag (1.2.0)
     griddler (1.2.1)
       htmlentities
@@ -58,10 +68,14 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.53)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.11.2)
+    multipart-post (2.0.0)
     pg (0.18.2)
     polyglot (0.3.5)
     pry (0.10.1)
@@ -129,12 +143,15 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  dotenv-rails
+  gibbon
   gravatar_image_tag
   griddler
   griddler-mandrill
   griddler-sendgrid
   jbuilder (~> 1.2)
   jquery-rails
+  mandrill-api
   pg
   pry
   rails (= 4.0.2)
