@@ -50,7 +50,9 @@ gem 'mandrill-api'
 
 gem "dotenv-rails"
 
- gem 'gibbon'
+gem 'gibbon'
+
+gem 'mandrill-api', require: 'mandrill'
 
 # Use ActiveModelpg has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
