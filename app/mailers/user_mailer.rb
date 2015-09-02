@@ -14,9 +14,10 @@ class UserMailer < ActionMailer::Base
   		subject: "Welcome! (from rails)",
   		merge_vars: [
   			{rcpt: user.email,
-			vars:[{
-				name: "USER_NAME", content: user.email
-				}]
+			vars:[
+				{name: "USER_EMAIL", content: user.email},
+        {name: "USER_ENCODED_URL", content: user.encoded_url}
+				]
 			}
   		]
   	}
