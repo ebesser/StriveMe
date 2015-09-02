@@ -5,5 +5,5 @@ Workjounral::Application.routes.draw do
 
 	mount_griddler
 
-	resources :users, param: :email, :email => /[\w@.]+/
+	resources :users, param: :encoded_url
 end
