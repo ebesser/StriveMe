@@ -7,11 +7,11 @@ class UserMailer < ActionMailer::Base
 
 
   def new_user(user)
-  	template_name = "new-user"
+  	template_name = "new-user-autosend"
   	template_content = []
   	message = {
   		to: [{email: user.email}],
-  		subject: "Welcome! (from rails)",
+  		subject: "Welcome to StriveMe!",
   		merge_vars: [
   			{rcpt: user.email,
 			vars:[
