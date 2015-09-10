@@ -36,8 +36,6 @@ end
 
 gem 'griddler'
 
-gem 'griddler-sendgrid'
-
 gem 'griddler-mandrill'
 
 # gem 'sanitize'
