@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "note@striveme.com"
+  default from: "evan@striveme.com"
 
   def mandrill_client
   	@mandrill_client ||= Mandrill::API.new ENV['MANDRILL_API_KEY']
