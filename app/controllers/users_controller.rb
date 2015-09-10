@@ -24,8 +24,13 @@ class UsersController < ApplicationController
     gb.lists.retrieve
     list_id = ENV["MAILCHIMP_LIST_ID"]
     puts list_id
-    gb.lists(list_id).members.create(body: {email_address: user_email, url: user_encoded_url, status: "subscribed",})
-    # UserMailer.user_created(@user)
+    puts user_encoded_url
+    gb.lists(list_id).members.create(body: {
+      email_address: user_email, 
+      status: "subscribed", 
+      merge_fields: 
+        {LNAME: user_encoded_url}
+    })
   	redirect_to '/'
   end
 end

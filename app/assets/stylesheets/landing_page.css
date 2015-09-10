@@ -24,6 +24,7 @@
 
 .landing_page .logo {
     width: 300px;
+    padding-top: 50px;
 }  
 
 .landing_page .navbar-header {
@@ -106,6 +107,7 @@ a:before,
 
 .landing_page .navbar-default .navbar-brand {
 	color: white;
+    padding-top: 50px;
 }
 
 .landing_page .navbar-default .navbar-nav > li > a {
@@ -136,7 +138,7 @@ a:before,
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
 	background-color: #3498db;
 	margin-top: -20px;
-	padding-top:150px;
+	padding-top:100px;
     padding-bottom: 50px;
 	background-attachment: relative;
 	background-position: center center;
@@ -167,4 +169,24 @@ a:before,
     -webkit-box-shadow: 20px 17px 12px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 20px 17px 12px -5px rgba(0,0,0,0.75);
     box-shadow: 20px 17px 12px -5px rgba(0,0,0,0.75);
+}
+
+/* Mobile styling */
+
+@media (max-width: 480px) { 
+    .img-responsive {
+        display: none;
+    }
+
+    .landing_page .form-control {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .landing_page .logo {
+        padding-top: 0px;
+} 
 }

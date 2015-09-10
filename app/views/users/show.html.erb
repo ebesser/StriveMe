@@ -3,6 +3,7 @@
         <h1 id="timeline">Your Journal</h1>
 <!--         <a type='button' class='btn btn-primary btn-lg' role="button">Add Entry</a> -->
     </div>
+    <% if @comments.exists? %>
     <ul class="timeline">
     	<% x = 1 %>
     	<% @comments.each do |comment| %>
@@ -11,11 +12,10 @@
 		          <div class="timeline-badge"><i class="glyphicon glyphicon-align-left"></i></div>
 		          <div class="timeline-panel">
 		            <div class="timeline-heading">
-		              <h4 class="timeline-title"><%= comment.email %></h4>
-		              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> <%= comment.created_at.localtime.to_formatted_s(:long_ordinal) %></small></p>
+		              <h3 class="timeline-title"><%= comment.created_at.localtime.to_formatted_s(:long_ordinal) %></h3>
 		            </div>
 		            <div class="timeline-body">
-		              <p><%= comment.body %></p>
+		              <h4><%= comment.body %></h4>
 		            </div>
 		          </div>
 		        </li>
@@ -37,4 +37,9 @@
 	        <% end %>
     	<% end %>
     </ul>
+    <% else %>
+    <h2 style="text-align:center;">Hey there, it looks like you don't have any notes yet!</h2>
+    <h3 style="text-align:center;"><a href="mailto:note@reply.striveme.com?Subject=First%20Post%20to%20StriveMe">Click here to get started with your first note</a></h3>
+    <img style="display:block; margin-left:auto; margin-right:auto;" src="http://media.giphy.com/media/87xihBthJ1DkA/giphy.gif">
+    <% end %>
 </div>
