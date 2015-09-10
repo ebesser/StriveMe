@@ -11,6 +11,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def thanks
+  end
+
   def create
   	puts params
   	user_email = params['user']['email']
@@ -31,6 +34,6 @@ class UsersController < ApplicationController
       merge_fields: 
         {LNAME: user_encoded_url}
     })
-  	redirect_to '/'
+  	redirect_to '/thanks'
   end
 end

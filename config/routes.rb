@@ -5,5 +5,7 @@ Workjounral::Application.routes.draw do
 
 	mount_griddler
 
+	get '/thanks' => "users#thanks"
+
 	resources :users, param: :encoded_url
 end
