@@ -1,4 +1,5 @@
 # **StriveMe**
+
 (Please note, this project is not currently being maintained on <a href=’www.striveme.com’>StriveMe.com</a>)
 
 StriveMe is a simple way to keep track of your accomplishments and wins through a quick email. After signing up, users are given a unique, encoded URL, which houses all of their notes:
@@ -8,9 +9,11 @@ StriveMe is a simple way to keep track of your accomplishments and wins through 
 Users create new journal entries by sending an email to notes@striveme.com
 
 **Problem**
+
 Professionals work hard every day towards specific goals to better their companies and themselves but are incredibly bad at keeping track of their wins, accomplishments, and progress over the course of business quarters or a year.
 
 **Solution**
+
 StriveMe allows users to recognize, keep track of, and store their wins by sending quick emails to a StriveMe email address.
 
 **Technologies**
