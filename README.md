@@ -20,4 +20,5 @@ StriveMe allows users to recognize, keep track of, and store their wins by sendi
  - a .env file (using the dotenv-rails gem) is used to hide environment variables (email, Mandrill, and Mailchimp credentials)
 
 **Tutorial**
+
 [This tutorial by GoRails](https://gorails.com/episodes/sending-emails-with-mandrill?utm_content=buffer6d758&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) was very useful in building this app, particularly setting up the recognition of send emails through SMTP.
